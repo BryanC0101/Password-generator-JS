@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password-Generator</title>
+</head>
+<body>
+    <section class="container">
+        <div class="password-container">
+            <div id="password-area"></div>
+            <img src="clipboard.svg" alt="copy" id="copyBtn">
+        </div>
+        
+        <div class="number-range">
+            <input type="range" min="0" max="20" value="10" id="range-area">
+            <h1 id="range-count">10</h1>
+        </div>
+
+        <div class="checkboks-area">
+            <div class="lowerCase-container">
+                <input type="checkbox" name="LowerCase" class="checkBox" id="checkLetterLower" checked>
+                <h1>LowerCase</h1>
+            </div>
+
+            <div class="upperCase-container">
+                <input type="checkbox" name="UpperCase" class="checkBox" id="checkLetterUpper" checked>
+                <h1>UpperCase</h1>
+            </div>
+
+            <div class="number-container">
+                <input type="checkbox" name="Numbers" class="checkBox" id="checkNum" checked>
+                <h1>Numbers</h1>
+            </div>
+
+            <div class="symbol-container">
+                <input type="checkbox" name="Symbols" class="checkBox" id="checkSymbols" checked>
+                <h1>Symbols</h1>
+            </div>
+        </div>
+        <button id="generate-btn" onclick="textGenerator()">Generate</button>
+
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
